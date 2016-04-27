@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <link href="lib/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+  </head>
+  <body ng-app="starter">
+  <!--logo-->
+  <div>
+    <img class="img-responsive" src="./img/main/culture.jpg">
+  </div>
+  <!--轮循图片-->
+  <div style="height: 130px;">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img style="width: 100%"  src="./img/main/b1.jpg"></div>
+        <div class="swiper-slide"><img style="width: 100%" src="./img/main/b2.jpg"></div>
+        <div class="swiper-slide"><img style="width: 100%" src="./img/main/b3.jpg"></div>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <div class="short">
+    <div class="row">
+      <div class="col">
+        <a href="#"><img src="img/main/Volunteer.png"><span>公共文化</span></a>
+      </div>
+      <div class="col">
+        <a href="#"><img src="img/main/ziyuanguanli.png"><span>资源管理</span></a>
+      </div>
+      <div class="col">
+        <a href="#"><img src="img/main/wenhuachanye.png"><span>文化产业</span></a>
+      </div>
+    </div>
+  </div>
+
+  <ion-list>
+
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w1.jpg">
+      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+      <p>2016年5月2日</p>
+    </a>
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w2.png">
+      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+      <p>2016年5月2日</p>
+    </a>
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w1.jpg">
+      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+      <p>2016年5月2日</p>
+    </a>
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w2.png">
+      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+      <p>2016年5月2日</p>
+    </a>
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w1.jpg">
+      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+      <p>2016年5月2日</p>
+    </a>
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w2.png">
+      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+      <p>2016年5月2日</p>
+    </a>
+
+  </ion-list>
+
+
+
+  <script src="lib/ionic/js/jquery.min.js"></script>
+  <script src="lib/swiper/js/swiper.jquery.min.js"></script>
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true
+    });
+  </script>
+
+
+  </body>
+</html>

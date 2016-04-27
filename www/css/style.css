@@ -1,0 +1,57 @@
+body {
+  font-family: "Microsoft Yahei", Verdana, Arial, Helvetica, sans-serif;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.img-circle {
+  border-radius: 50%;
+}
+a {
+  text-decoration: none;
+}
+.short .row .col {
+  text-align: center;
+}
+.short .row .col a {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+.short .row .col a span {
+  position: absolute;
+  top: 85px;
+  left: 24px;
+  z-index: 999;
+}
+.item h2 {
+  font-family: "Microsoft Yahei", Helvetica Neue, Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-line;
+}
