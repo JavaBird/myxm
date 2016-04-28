@@ -2,6 +2,7 @@
 /platforms/
 /plugins/
 /scss/
+.idea/*
 .bowerrc
 .editorconfig
 bower.json
@@ -9,3 +10,7 @@ config.xml
 gulpfile.js
 ionic.project
 package.json
+*.xml
+.idea/myxm.iml
+.idea/vcs.xml
+.idea/myxm.iml
