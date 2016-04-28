@@ -15,81 +15,90 @@
 
   </head>
   <body ng-app="starter">
-<div class="bar bar-header">
-  <!--logo-->
-  <div>
-    <img class="img-responsive" src="./img/main/culture.jpg">
-  </div>
-  <!--轮循图片-->
-  <div style="height: 130px;">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img style="width: 100%"  src="./img/main/b1.jpg"></div>
-        <div class="swiper-slide"><img style="width: 100%" src="./img/main/b2.jpg"></div>
-        <div class="swiper-slide"><img style="width: 100%" src="./img/main/b3.jpg"></div>
-
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+  <ion-header-bar align-title="left" class="bar-positive">
+    <div class="buttons">
+      <button class="button" ng-click="doSomething()">Left Button</button>
     </div>
-  </div>
+    <h1 class="title">Title!</h1>
+    <div class="buttons">
+      <button class="button">Right Button</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <!--轮循图片-->
+    <div style="height: 130px;">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img style="width: 100%"  src="./img/main/b1.jpg"></div>
+          <div class="swiper-slide"><img style="width: 100%" src="./img/main/b2.jpg"></div>
+          <div class="swiper-slide"><img style="width: 100%" src="./img/main/b3.jpg"></div>
 
-  <div class="short">
-    <div class="row">
-      <div class="col">
-        <a href="#"><img src="img/main/Volunteer.png"><span>公共文化</span></a>
-      </div>
-      <div class="col">
-        <a href="#"><img src="img/main/ziyuanguanli.png"><span>资源管理</span></a>
-      </div>
-      <div class="col">
-        <a href="#"><img src="img/main/wenhuachanye.png"><span>文化产业</span></a>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-  </div>
-</div>
-  <ion-scroll >
-  <div class="list" style="height: 600px;">
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/main/w1.jpg">
-      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
-      <p>2016年5月2日</p>
-    </a>
+    <div class="list" style="height: 600px;">
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/main/w1.jpg">
+        <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+        <p>2016年5月2日</p>
+      </a>
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/main/w2.png">
-      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
-      <p>2016年5月2日</p>
-    </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/main/w2.png">
+        <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+        <p>2016年5月2日</p>
+      </a>
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/main/w1.jpg">
-      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
-      <p>2016年5月2日</p>
-    </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/main/w1.jpg">
+        <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+        <p>2016年5月2日</p>
+      </a>
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/main/w2.png">
-      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
-      <p>2016年5月2日</p>
-    </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/main/w2.png">
+        <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+        <p>2016年5月2日</p>
+      </a>
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/main/w1.jpg">
-      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
-      <p>2016年5月2日</p>
-    </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/main/w1.jpg">
+        <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+        <p>2016年5月2日</p>
+      </a>
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/main/w2.png">
-      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
-      <p>2016年5月2日</p>
-    </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/main/w2.png">
+        <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+        <p>2016年5月2日</p>
+      </a>
 
-</div>
-  </ion-scroll>
+    </div>
 
 
+  </ion-content>
+  <ion-footer-bar>
+    <div class="tabs tabs-icon-top">
+      <a class="tab-item">
+        <i class="icon ion-home"></i>
+        主页
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-star"></i>
+        资源管理
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-gear-a"></i>
+        公共文化
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-gear-a"></i>
+        文化产业
+      </a>
+    </div>
+  </ion-footer-bar>
 
   <script src="lib/ionic/js/jquery.min.js"></script>
   <script src="lib/swiper/js/swiper.jquery.min.js"></script>
