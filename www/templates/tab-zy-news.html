@@ -1,0 +1,78 @@
+<ion-view hide-nav-bar="true">
+<ion-content>
+  <ion-refresher
+    pulling-text="释放刷新..."
+    on-refresh="doRefresh()">
+  </ion-refresher>
+
+  <!--轮播图片-->
+  <div style="height: 130px;">
+    <div id="swiper2" class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img style="width: 100%"  src="./img/main/b1.jpg"></div>
+        <div class="swiper-slide"><img style="width: 100%" src="./img/main/b2.jpg"></div>
+        <div class="swiper-slide"><img style="width: 100%" src="./img/main/b3.jpg"></div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <ion-list>
+    <ion-item class="item-avatar item-icon-right" nav-direction="forward"  ng-repeat="new in news" type="item-text-wrap" href="#/news-detail">
+      <img ng-src="{{new.face}}">
+      <h2>{{new.title}}</h2>
+      <p>{{new.date}}</p>
+    </ion-item>
+  </ion-list>
+  <!--<div class="list" style="height: 600px;">
+    <a class="item item-thumbnail-left" href="#/news-detail">
+      <img src="img/main/w1.jpg">
+      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+      <p>2016年5月2日</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w2.png">
+      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+      <p>2016年5月2日</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w1.jpg">
+      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+      <p>2016年5月2日</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w2.png">
+      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+      <p>2016年5月2日</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w1.jpg">
+      <h2 >话剧《生命如歌》上海站演出越演越热,男一号“陈旭刚”的董怀玉走进学生剧社.</h2>
+      <p>2016年5月2日</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/main/w2.png">
+      <h2>老文化艺术家赴代县神池扶贫采风精神传递给了乡村</h2>
+      <p>2016年5月2日</p>
+    </a>
+
+  </div>
+  </div>-->
+</ion-content>
+
+<script>
+  var swiper = new Swiper('#swiper2', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    autoPlay:true
+  });
+
+
+</script>
+
+</ion-view>

@@ -54,6 +54,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+
+    .state('tab.zy.news',{
+      url:'/news',
+      templateUrl: 'templates/tab-zy-news.html',
+      controller: 'NewsListCtrl'
+    })
+
+   .state('news-detail',{
+      url:'/news-detail',
+          templateUrl: 'templates/tab-zy-news-detail.html',
+          controller: 'NewsDetailCtrl'
+
+    })
+
+    .state('tab.zy.read',{
+      url:'/read',
+      templateUrl: 'templates/tab-zy-read.html'
+    })
+
+
+
     .state('tab.ggwh',{
       url:'/ggwh',
       views: {
@@ -64,51 +85,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-  ;
+    .state('tab.zygl',{
+      url:'/zygl',
+      views: {
+        'tab-zygl': {
+          templateUrl: 'templates/tab-zygl.html'
 
-
-      // Each tab has its own nav history stack:
-
-     /* .state('tab.dash', {
-        url: '/dash',
-        views: {
-          'tab-dash': {
-            templateUrl: 'templates/tab-dash.html',
-            controller: 'DashCtrl'
-          }
         }
-      })
+      }
+    })
 
-      .state('tab.chats', {
-        url: '/chats',
-        views: {
-          'tab-chats': {
-            templateUrl: 'templates/tab-chats.html',
-            controller: 'ChatsCtrl'
-          }
-        }
-      })
-      .state('tab.chat-detail', {
-        url: '/chats/:chatId',
-        views: {
-          'tab-chats': {
-            templateUrl: 'templates/chat-detail.html',
-            controller: 'ChatDetailCtrl'
-          }
-        }
-      })
+    .state('tab.whcy',{
+      url:'/whcy',
+      views: {
+        'tab-whcy': {
+          templateUrl: 'templates/tab-whcy.html'
 
-      .state('tab.account', {
-        url: '/account',
-        views: {
-          'tab-account': {
-            templateUrl: 'templates/tab-account.html',
-            controller: 'AccountCtrl'
-          }
         }
-      });*/
+      }
+    });
+
+
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/zy');
+    $urlRouterProvider.otherwise('/tab/zy/news');
 
   });
+
+
