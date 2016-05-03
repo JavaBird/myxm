@@ -57,8 +57,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     .state('tab.zy.news',{
       url:'/news',
-      templateUrl: 'templates/tab-zy-news.html',
-      controller: 'NewsListCtrl'
+      views:{
+        'ly-zy':{
+          templateUrl: 'templates/tab-zy-news.html',
+          controller: 'NewsListCtrl'
+        }
+
+      }
+
     })
 
    .state('news-detail',{
@@ -70,7 +76,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     .state('tab.zy.read',{
       url:'/read',
-      templateUrl: 'templates/tab-zy-read.html'
+      views:{
+        'ly-zy':{
+          templateUrl: 'templates/tab-zy-read.html'
+        }
+      }
+
     })
 
 

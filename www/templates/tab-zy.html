@@ -1,13 +1,12 @@
-<ion-view  hide-nav-bar="true" >
-<ion-header-bar >
-
-  <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-  <!-- Swiper -->
+<ion-view hide-nav-bar="true">
+  <ion-header-bar>
+  <button class="button button-icon icon ion-navicon"></button>
   <div id="swiper1" class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="line-height:34px;text-align: center;"><a class="active"   nav-direction="forward" href="#/tab/zy/news" >新闻</a></div>
+      <div class="swiper-slide" style="line-height:34px;text-align: center;" ui-sref="tab.zy.news" ><a class="active"   nav-direction="forward"  >新闻
+      </a></div>
       <div class="swiper-slide" style="line-height:34px;text-align: center;">原创</div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;"><a   nav-direction="forward" href="#/tab/zy/read" >读书</a></div>
+      <div class="swiper-slide" style="line-height:34px;text-align: center;" ui-sref="tab.zy.read"><a   nav-direction="forward"  >读书</a></div>
       <div class="swiper-slide" style="line-height:34px;text-align: center;">看报</div>
       <div class="swiper-slide" style="line-height:34px;text-align: center;">电影</div>
       <div class="swiper-slide" style="line-height:34px;text-align: center;">戏曲</div>
@@ -18,22 +17,7 @@
   <button  class="button button-icon icon ion-android-search"></button>
 </ion-header-bar>
 
-<ion-nav-view></ion-nav-view>
-
- <!--   <ion-view ui-view="">
-
-
-
-    </ion-view>-->
-
-
-
-
-
-
-
-
-
+  <ion-nav-view name="ly-zy"></ion-nav-view>
   <script>
 
    var ci = 0;

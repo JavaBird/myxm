@@ -64,6 +64,9 @@ a {
 #swiper1 a {
   color: #434A54;
 }
+#swiper1 a:hover {
+  color: #5D9CEC !important;
+}
 .active {
   color: #5D9CEC !important;
 }
