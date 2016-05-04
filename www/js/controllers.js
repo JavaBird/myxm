@@ -12,6 +12,22 @@ angular.module('starter.controllers', [])
 
 
   })
+  .controller('MyCtrl',function($scope, $ionicHistory){
+
+    $scope.myGoBack = function() {
+      $ionicHistory.goBack();
+    };
+
+  })
+
+  .controller('ZyCtrl', function($scope,$ionicSideMenuDelegate){
+
+    $scope.toggleLeftSideMenu = function() {
+      $ionicSideMenuDelegate.toggleLeft();
+    };
+
+  })
+
 
   .controller('NewsListCtrl', function($scope) {
 

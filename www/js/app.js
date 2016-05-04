@@ -48,7 +48,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url:'/zy',
       views: {
         'tab-zy': {
-          templateUrl: 'templates/tab-zy.html'
+          templateUrl: 'templates/tab-zy.html',
+          controller:'ZyCtrl'
 
         }
       }
@@ -74,6 +75,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     })
 
+
+    .state('test',{
+      url:'/test',
+      templateUrl: 'templates/test.html'
+    })
+
     .state('tab.zy.read',{
       url:'/read',
       views:{
@@ -84,17 +91,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     })
 
-
-
-    .state('tab.ggwh',{
-      url:'/ggwh',
-      views: {
-        'tab-ggwh': {
-          templateUrl: 'templates/tab-ggwh.html'
-
-        }
-      }
-    })
 
     .state('tab.zygl',{
       url:'/zygl',
