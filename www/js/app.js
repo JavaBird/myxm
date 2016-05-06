@@ -48,9 +48,7 @@ angular.module('starter', ['ionic', 'ngCordova','starter.controllers', 'starter.
       url:'/zy',
       views: {
         'tab-zy': {
-          templateUrl: 'templates/tab-zy.html',
-          controller:'ZyCtrl'
-
+          templateUrl: 'templates/tab-zy.html'
         }
       }
     })

@@ -1,45 +1,9 @@
 <ion-view hide-nav-bar="true">
-  <ion-header-bar>
-    <button class="button button-icon icon ion-navicon" ng-click="toggleLeftSideMenu()"></button>
-  <div id="swiper1" class="swiper-container" >
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="line-height:34px;text-align: center;" ui-sref="tab.zy.news" ><a class="active"   nav-direction="forward"  >新闻
-      </a></div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;">原创</div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;" ui-sref="tab.zy.read"><a   nav-direction="forward"  >读书</a></div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;">看报</div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;">电影</div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;">戏曲</div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;">小品</div>
-      <div class="swiper-slide" style="line-height:34px;text-align: center;">相声</div>
-    </div>
-  </div>
-  <button  class="button button-icon icon ion-android-search"></button>
-</ion-header-bar>
+
 
   <ion-nav-view name="ly-zy" ui-sref-active="tab.zy.news"></ion-nav-view>
-<script>
-  var ci = 0;
 
-
-    var swiper2 = new Swiper('#swiper1', {
-      slidesPerView: 6,
-      spaceBetween: 10,
-      onClick:function(swiper){
-
-        $(swiper.slides[ci]).find("a").removeClass('active');
-        $(swiper.slides[swiper.clickedIndex]).find("a").addClass('active');
-        ci = swiper.clickedIndex;
-
-      }
-    });
-
-
-
-
-
-
-</script>
 
 
 </ion-view>
+

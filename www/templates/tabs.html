@@ -8,13 +8,48 @@ navigation history that also transitions its views in and out.
 
 <ion-side-menus>
   <!-- 中间内容 -->
-  <ion-side-menu-content >
+  <ion-side-menu-content ng-controller="ZyCtrl">
 
     <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
       <!-- Dashboard Tab -->
-  <ion-tab title="公共文化" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/zy" sh>
-        <ion-nav-view name="tab-zy"></ion-nav-view>
+  <ion-tab title="公共文化" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/zy" >
+    <ion-header-bar>
+      <button class="button button-icon icon ion-navicon" ng-click="toggleLeftSideMenu()"></button>
+      <div id="swiper1" class="swiper-container" >
+        <div class="swiper-wrapper">
+
+
+          <div class="swiper-slide" style="line-height:34px;text-align: center;" ui-sref="tab.zy.news" ><a class="active"   nav-direction="forward"  >新闻
+          </a></div>
+          <div class="swiper-slide" style="line-height:34px;text-align: center;">原创</div>
+          <div class="swiper-slide" style="line-height:34px;text-align: center;" ui-sref="tab.zy.read"><a   nav-direction="forward"  >读书</a></div>
+          <div class="swiper-slide" style="line-height:34px;text-align: center;">看报</div>
+          <div class="swiper-slide" style="line-height:34px;text-align: center;">电影</div>
+          <div class="swiper-slide" style="line-height:34px;text-align: center;">戏曲</div>
+         <div class="swiper-slide" style="line-height:34px;text-align: center;">小品</div>
+          <div class="swiper-slide" style="line-height:34px;text-align: center;"></div>
+          <div class="swiper-slide" style="line-height:34px;text-align: center;"></div>
+        </div>
+      </div>
+      <button  class="button button-icon icon ion-android-search"></button>
+    </ion-header-bar>
+    <ion-nav-view name="tab-zy"></ion-nav-view>
+    <script>
+      var ci = 0;
+      var swiper1 = new Swiper('#swiper1', {
+        slidesPerView: 7,
+        roundLengths : true,
+        /*loop:true,*/
+        onClick:function(swiper){
+          $(swiper.slides[ci]).find("a").removeClass('active');
+          $(swiper.slides[swiper.clickedIndex]).find("a").addClass('active');
+          ci = swiper.clickedIndex;
+
+        }
+      });
+    </script>
+
       </ion-tab>
 
       <!-- Chats Tab -->
