@@ -1,5 +1,5 @@
 
-
+<ion-nav-view>
 <ion-content>
   <ion-refresher
     pulling-text="释放刷新..."
@@ -15,7 +15,7 @@
         <div class="swiper-slide"><img style="width: 100%" src="./img/main/b3.jpg"></div>
 
       </div>
-      <div class="swiper-pagination"></div>
+      <div id="swiper2-pag" class="swiper-pagination"></div>
     </div>
   </div>
   <ion-list>
@@ -27,10 +27,9 @@
   </ion-list>
 </ion-content>
 
-<script>
-  var swiper2 = new Swiper('#swiper2', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
+<script type="text/javascript">
+  swiper2 = new Swiper('#swiper2', {
+    pagination: '#swiper2-pag',
     autoplay: 2500,
     loop: true
   });
@@ -38,3 +37,4 @@
 
 </script>
 
+</ion-nav-view>

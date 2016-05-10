@@ -56,6 +56,7 @@ angular.module('starter', ['ionic', 'ngCordova','starter.controllers', 'starter.
 
     .state('tab.zy.news',{
       url:'/news',
+      cache:false,
       views:{
         'ly-zy':{
           templateUrl: 'templates/tab-zy-news.html',
